@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #23b6ed;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextArea fx:id="txtReceta" layoutX="17.0" layoutY="23.0" prefHeight="297.0" prefWidth="467.0" />
+      <Label fx:id="lblLineas" layoutX="24.0" layoutY="389.0" text="Cantidad de Lineas">
+         <font>
+            <Font name="Berlin Sans FB" size="32.0" />
+         </font>
+      </Label>
+      <Button layoutX="341.0" layoutY="384.0" mnemonicParsing="false" onAction="#procesar" prefHeight="42.0" prefWidth="113.0" style="-fx-background-color: #ffffff;" text="Procesar">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
