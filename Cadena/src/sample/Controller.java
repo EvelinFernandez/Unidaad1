@@ -16,11 +16,11 @@ public class Controller {
     TextArea txtReceta;
     @FXML protected void initialize(){
         try{
-            File f=new File("./src/sample/archivo.txt");
-            BufferedReader br= new BufferedReader((new FileReader(f)));
-            String texto="";
-            while((texto = br.readLine())!=null){
-                txtReceta.appendText("\n"+texto);
+                File f=new File("./src/sample/archivo.txt");
+                BufferedReader br= new BufferedReader((new FileReader(f)));
+                String texto="";
+                while((texto = br.readLine())!=null){
+                    txtReceta.appendText("\n"+texto);
             }
         }catch (Exception e){
             txtReceta.setText(e.getMessage());
